@@ -1,10 +1,12 @@
 package com.xiangmu.practice_paicoding.mapper;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 @Repository
+@Primary
 public class JdbcGetUserNameMapper implements GetUserNameMapper {
     private final JdbcTemplate jdbcTemplate;
 
