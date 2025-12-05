@@ -1,7 +1,9 @@
 package com.xiangmu.practice_paicoding.mapper;
 
-import com.xiangmu.practice_paicoding.api.ApiResponse;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.xiangmu.practice_paicoding.model.Username;
+import org.apache.ibatis.annotations.Mapper;
 
-public interface GetUserNameMapper {
-    ApiResponse getName(String articleId);
+@Mapper
+public interface GetUserNameMapper extends BaseMapper<Username> {
 }
